@@ -9,6 +9,7 @@ html {
   margin: 0;
   font-family: "Inter", sans-serif;
   background-color: var(--background);
+  color: var(--text);
 }
 
 body {
@@ -18,21 +19,50 @@ body {
 main,
 footer {
   min-width: 60vw;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
+}
+
+.headline {
+  font-weight: 200;
+  margin-left: 1rem;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   background-color: var(--container);
-  margin: 3vh auto;
-  border-radius: 3rem;
+  margin: 1.5em auto;
+  border-radius: 2rem;
 }
 
-.headline {
+.container h2 {
+  cursor: pointer;
   font-weight: 200;
-  margin-left: 3rem;
+  margin: 1rem 2rem;
+  user-select: none;
+}
+
+.container p {
+  margin: 0rem 2rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#social {
+  display: flex;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+footer p a {
   color: var(--text);
 }
-

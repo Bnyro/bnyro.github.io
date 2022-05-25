@@ -52,6 +52,29 @@ footer {
 
 #social {
   display: flex;
+  margin-bottom: 1rem;
+}
+
+#social a {
+  margin: 1rem auto;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#social a img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5em;
+  margin-bottom : 0.3em;
+}
+
+#social a img:hover {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer {
@@ -65,4 +88,10 @@ footer p {
 
 footer p a {
   color: var(--text);
+}
+
+@media screen and  (max-width: 1000px) {
+  #social {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,38 @@
+:root {
+  --background: #211a1b;
+  --container: #352F2F;
+  --text: #FFB1BE;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+}
+
+body {
+  margin: 3vh 3vw;
+}
+
+main,
+footer {
+  min-width: 60vw;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container);
+  margin: 3vh auto;
+  border-radius: 3rem;
+}
+
+.headline {
+  font-weight: 200;
+  margin-left: 3rem;
+  color: var(--text);
+}
+

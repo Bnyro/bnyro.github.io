@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24px"
+   height="24px"
+   viewBox="0 0 24 24"
+   role="img"
+   version="1.1"
+   id="svg416"
+   sodipodi:docname="kotlin.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs420">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4855">
+      <stop
+         style="stop-color:#ffbbaa;stop-opacity:1;"
+         offset="0"
+         id="stop4851" />
+      <stop
+         style="stop-color:#ff5e8c;stop-opacity:1;"
+         offset="1"
+         id="stop4853" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4855"
+       id="linearGradient4857"
+       x1="0"
+       y1="12"
+       x2="24"
+       y2="12"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview418"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="26.333333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-width="960"
+     inkscape:window-height="1012"
+     inkscape:window-x="103"
+     inkscape:window-y="103"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg416" />
+  <title
+     id="title412">Kotlin icon</title>
+  <path
+     d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z"
+     id="path414"
+     style="fill-opacity:1;fill:url(#linearGradient4857)" />
+</svg>

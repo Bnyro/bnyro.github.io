@@ -50,10 +50,30 @@ section p {
   margin-bottom: 1em;
 }
 
+#languages {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#languages div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+#languages div img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
 #projects div {
   display: inline-block;
   padding: 0 1.5rem;
   margin: 1rem;
+  margin-top: 0;
   border: 1px solid var(--text);
   border-radius: 1rem;
 }
@@ -61,8 +81,10 @@ section p {
 #projects div a {
   display: inline-block;
   margin-top: 1em;
-  font-weight: 150;
+  padding-bottom: -1px;
+  font-size: 1.2rem;
   text-decoration: none;
+  box-shadow: 0 2px;
   color: var(--text);
 }
 
@@ -93,9 +115,8 @@ section p {
 }
 
 
-#social a img:hover {
-  width: 2.5rem;
-  height: 2.5rem;
+#social a:hover {
+  transform: scale(1.15);
 }
 
 footer {
@@ -112,7 +133,7 @@ footer p a {
 }
 
 @media screen and  (max-width: 1000px) {
-  #social {
+  #social, #languages {
     flex-direction: column;
   }
 }

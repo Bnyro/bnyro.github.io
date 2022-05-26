@@ -63,9 +63,14 @@ section p {
   cursor: pointer;
 }
 
+#languages div:hover {
+  transform: scale(1.15);
+}
+
 #languages div img {
   height: 2.5rem;
   width: 2.5rem;
+  margin: 0 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -135,5 +140,9 @@ footer p a {
 @media screen and  (max-width: 1000px) {
   #social, #languages {
     flex-direction: column;
+  }
+  #languages div {
+    flex-direction: row;
+    justify-content: center;
   }
 }

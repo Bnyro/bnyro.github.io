@@ -28,7 +28,7 @@ footer {
   margin-left: 1rem;
 }
 
-.container {
+section {
   display: flex;
   flex-direction: column;
   background-color: var(--container);
@@ -36,18 +36,38 @@ footer {
   border-radius: 2rem;
 }
 
-.container h2 {
+section h2 {
   cursor: pointer;
   font-weight: 200;
   margin: 1rem 2rem;
   user-select: none;
 }
 
-.container p {
+section p {
   margin: 0rem 2rem;
   line-height: 1.6;
   font-weight: 500;
   margin-bottom: 1em;
+}
+
+#projects div {
+  display: inline-block;
+  padding: 0 1.5rem;
+  margin: 1rem;
+  border: 1px solid var(--text);
+  border-radius: 1rem;
+}
+
+#projects div a {
+  display: inline-block;
+  margin-top: 1em;
+  font-weight: 150;
+  text-decoration: none;
+  color: var(--text);
+}
+
+#projects div p {
+  margin: 0.5rem 0;
 }
 
 #social {
@@ -71,6 +91,7 @@ footer {
   margin-right: 1.5em;
   margin-bottom : 0.3em;
 }
+
 
 #social a img:hover {
   width: 2.5rem;

@@ -7,7 +7,7 @@
 html {
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
   color: var(--text);
 }
@@ -37,8 +37,10 @@ section {
 }
 
 section h2 {
+  border-left: 0.15em solid;
+  padding-left: 0.5em;
   cursor: pointer;
-  font-weight: 200;
+  font-weight: 400;
   margin: 1rem 2rem;
   user-select: none;
 }
@@ -74,10 +76,14 @@ section p {
   margin-bottom: 0.5rem;
 }
 
+#projects {
+  margin-bottom: 0.5em;
+}
+
 #projects div {
   display: inline-block;
   padding: 0 1.5rem;
-  margin: 1rem;
+  margin: 1rem 1.8rem;
   margin-top: 0;
   border: 1px solid var(--text);
   border-radius: 1rem;
@@ -85,8 +91,7 @@ section p {
 
 #projects div a {
   display: inline-block;
-  margin-top: 1em;
-  padding-bottom: -1px;
+  margin-top: 0.7em;
   font-size: 1.2rem;
   text-decoration: none;
   box-shadow: 0 2px;

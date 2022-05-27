@@ -113,7 +113,7 @@ section h2 {
   text-decoration: none;
   color: var(--text);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
 }
@@ -121,8 +121,7 @@ section h2 {
 #social a img {
   width: 2rem;
   height: 2rem;
-  margin-right: 1.5em;
-  margin-bottom : 0.3em;
+  margin-right: 1.2em;
 }
 
 

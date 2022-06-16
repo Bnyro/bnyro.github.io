@@ -1,6 +1,7 @@
 :root {
   --background: #191724;
   --container: #1f1d2e;
+  --overlay: #2a283e;
   --text: #FFB1BE;
 }
 
@@ -86,11 +87,11 @@ section h2 {
 }
 
 #projects div {
+  background-color: var(--overlay);
   display: inline-block;
   padding: 0 1.5rem;
   margin: 1rem 1.8rem;
   margin-top: 0;
-  border: 1px solid var(--text);
   border-radius: 1rem;
 }
 

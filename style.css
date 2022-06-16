@@ -1,6 +1,6 @@
 :root {
-  --background: #211a1b;
-  --container: #352F2F;
+  --background: #191724;
+  --container: #1f1d2e;
   --text: #FFB1BE;
 }
 
@@ -23,9 +23,14 @@ footer {
   margin: auto;
 }
 
-.headline {
-  font-weight: 500;
+#headline {
   margin-left: 1rem;
+}
+
+#headline span {
+  font-size: 2.1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
 }
 
 section {

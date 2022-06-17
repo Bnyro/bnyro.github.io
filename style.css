@@ -1,14 +1,14 @@
 :root {
   --background: #191724;
   --container: #1f1d2e;
-  --overlay: #2a283e;
+  --overlay: #191828;
   --text: #FFB1BE;
 }
 
 html {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   background-color: var(--background);
   color: var(--text);
 }

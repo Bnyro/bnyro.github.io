@@ -1,159 +1,142 @@
 :root {
-  --background: #191724;
-  --container: #1f1d2e;
-  --overlay: #191828;
-  --text: #FFB1BE;
-}
+  /** colors **/
+  --base: #191724;
+  --highlight-high: rgba(110, 106, 134, 0.2);
+  --highlight-low: rgba(110, 106, 134, 0.1);
+  --surface: #1f1d2e;
+  --text: #e0def4;
+  --accent: #908caa;
 
-html {
-  padding: 0;
-  margin: 0;
-  font-family: Arial;
-  background-color: var(--background);
-  color: var(--text);
+  /** sizes **/
+  --max-width: 72em;
+  --padding-x: 2em;
 }
 
 body {
-  margin: 3vh 3vw;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--base);
+  color: var(--text);
 }
 
-main,
-footer {
-  min-width: 60vw;
-  max-width: 1000px;
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.container {
+  padding: 0 var(--padding-x);
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  width: 100%;
   margin: auto;
 }
 
-#headline {
-  margin-left: 1rem;
-}
-
-#headline span {
-  font-size: 2.1rem;
-  letter-spacing: 0.2rem;
-  font-weight: 600;
-}
-
-section {
+/** header **/
+header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2em var(--padding-x);
   display: flex;
-  flex-direction: column;
-  background-color: var(--container);
-  margin: 1.5em auto;
-  border-radius: 2rem;
+  justify-content: space-between;
 }
 
-section h2 {
-  border-left: 0.15em solid;
-  padding-left: 0.5em;
-  cursor: pointer;
-  font-weight: 400;
-  margin: 1rem 2rem;
-  user-select: none;
-}
-
-#about p {
-  margin: 0rem 2rem;
-  line-height: 1.6;
-  font-style: italic;
-  margin-bottom: 1em;
-}
-
-#languages {
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-#languages div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1rem auto;
-  cursor: pointer;
-}
-
-#languages div:hover {
-  transform: scale(1.15);
-}
-
-#languages div img {
-  height: 2.5rem;
-  width: 2.5rem;
-  margin: 0 1rem;
-  margin-bottom: 0.5rem;
-}
-
-#projects {
-  margin-bottom: 0.5em;
-}
-
-#projects div {
-  background-color: var(--overlay);
-  display: inline-block;
-  padding: 0 1.5rem;
-  margin: 1rem 1.8rem;
-  margin-top: 0;
-  border-radius: 1rem;
-}
-
-#projects div a {
-  display: inline-block;
-  margin-top: 0.7em;
-  font-size: 1.2rem;
-  text-decoration: none;
-  box-shadow: 0 2px;
+#brand {
+  margin-top: 0.3em;
+  font-weight: 700;
   color: var(--text);
 }
 
-#projects div p {
-  margin: 0.7rem 0;
-  line-height: 1.4;
-}
-
-#social {
+nav {
   display: flex;
-  margin-bottom: 1rem;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
-#social a {
-  margin: 1rem auto;
-  text-decoration: none;
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: 600;
+label.hamburg {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-#social a img {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1.2em;
+label.hamburg .line {
+  background-color: var(--text);
+  height: 0.2em;
+  width: 2em;
+  margin: 0.16em 0;
+  margin-left: auto;
+  border-radius: 0.5em;
 }
 
-
-#social a:hover {
-  transform: scale(1.15);
+label.hamburg .line + .line {
+  width: 1.5em;
 }
 
+label.hamburg .line + .line + .line {
+  width: 1em;
+}
+
+input#hamburg {
+  display: none;
+}
+
+.topmenu {
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: ease-in-out 0.2s;
+  list-style-type: none;
+  margin: 0;
+  text-align: end;
+}
+
+#hamburg:checked + .hamburg + .topmenu {
+  max-height: 600px;
+  margin-top: 1em;
+}
+
+/** footer **/
 footer {
-  text-align: center;
+  height: 7em;
+  background-color: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer p {
-  font-weight: 300;
-  line-height: 1.5;
+footer span {
+  justify-content: space-between;
 }
 
-footer p a {
-  color: var(--text);
+footer div {
+  display: flex;
+  justify-content: end;
 }
 
-@media screen and  (max-width: 1000px) {
-  #social, #languages {
-    flex-direction: column;
+footer div a {
+  margin: 0 1em;
+}
+
+footer div a img {
+  height: 1.5em;
+  width: 1.5em;
+  filter: invert();
+}
+
+@media (min-width: 700px) {
+  label.hamburg {
+    display: none;
   }
-  #languages div {
-    flex-direction: row;
-    justify-content: center;
+
+  .topmenu {
+    max-height: 600px;
+    display: flex;
+  }
+
+  .topmenu li {
+    margin-left: 2.5em;
   }
 }

@@ -1,110 +1,43 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bnyro</title>
+  </head>
 
-<head>
+  <body>
+    <header>
+      <a href="" id="brand">Bnyro</a>
+      <nav>
+        <input type="checkbox" id="hamburg" />
+        <label for="hamburg" class="hamburg">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </label>
+        <ul class="topmenu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/icon.svg">
-  <link rel="stylesheet" href="style.css">
-  <title>Bnyro</title>
+    <main></main>
 
-</head>
-
-<body>
-
-  <main>
-
-    <div id="headline">
-      <span style="color: #eb6f92;">B</span><span style="color: #f6c177;">n</span><span
-        style="color: #ebbcba;">y</span><span style="color: #31748f;">r</span><span style="color: #9ccfd8;">o</span>
-    </div>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>Hey there,<br>
-        I'm a 17 year old software developer from Germany currently contributing to some open source projects.<br>
-        My main skills are shell scripting and android development as well as front- and backends for websites and
-        servers.<br>
-        The freedom to use, study, distribute, and modify software is very important to me, therefore I'm a big fan
-        and
-        supporter of Free Libre Open Source Software.<br>
-        And I use Arch Linux btw. That's a personality trait, right?</p>
-    </section>
-
-    <section>
-      <h2>Languages</h2>
-      <div id="languages">
-        <div>
-          <img src="assets/python.svg">
-          Python
+    <footer>
+      <span class="container">
+        <p>© 2022 <a href="https://github.com/bnyro/">Bnyro</a></p>
+        <div id="social">
+          <a href="https://github.com/bnyro/"><img src="assets/github.svg" /></a>
+          <a href="mailto:bnyro@tutanota.com"><img src="assets/email.svg" /></a>
+          <a href="https://matrix.to/#/@bnyro:matrix.org"><img src="assets/matrix.svg" /></a>
         </div>
-        <div>
-          <img src="assets/html.svg">
-          HTML/CSS
-        </div>
-        <div>
-          <img src="assets/js.svg">
-          JavaScript
-        </div>
-        <div>
-          <img src="assets/kotlin.svg">
-          Kotlin
-        </div>
-        <div>
-          <img src="assets/shell.svg">
-          Shell/Bash
-        </div>
-        <div>
-          <img src="assets/git.svg">
-          Git
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div id="projects">
-        <div>
-          <a href="https://github.com/bnyro/bfetch/">bfetch</a>
-          <p>bfetch is a simple system information tool for UNIX-based systems written in Bash. It supports various
-            display
-            informations like the uptime, the kernel and OS version, the disk usage and the amount of installed
-            packages.</p>
-        </div>
-        <div>
-          <a href="https://github.com/libre-tube/LibreTube/">LibreTube</a>
-          <p>LibreTube is an alternative YouTube frontend with a modern UI. Its focus is on privacy, therefore the app
-            doesn't send any data to Google by using Piped instances. The app has support for SponsorBlock as well as
-            many other advanced features.</p>
-        </div>
-        <div>
-          <a href="https://github.com/libre-tube/libre-tube.github.io/">LibreTube Website</a>
-          <p>The LibreTube website is a modern, from-scratch-written webpage using HTML, CSS and JavaScript only. It
-            showcases LibreTube and all its various features as well as providing an FAQ.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <div id="social">
-        <a href="https://github.com/bnyro/"><img src="assets/github.svg">GitHub</a>
-        <a href="mailto:bnyro@tutanota.com"><img src="assets/email.svg">E-Mail</a>
-        <a href="https://matrix.to/#/@bnyro:matrix.org"><img src="assets/matrix.svg">Matrix</a>
-        <a href="https://t.me/cuteBnyro"><img src="assets/telegram.svg">Telegram</a>
-        <a href="https://discordapp.com/users/491195009949761556"><img src="assets/discord.svg">Discord</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Designed by <a href="https://github.com/bnyro/">Bnyro</a><br>
-      Copyright © 2022</p>
-  </footer>
-
-</body>
-
+      </span>
+    </footer>
+  </body>
 </html>

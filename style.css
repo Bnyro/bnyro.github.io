@@ -12,6 +12,11 @@
   --padding-x: 2em;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -25,17 +30,9 @@ a {
   color: var(--accent);
 }
 
-.container {
-  padding: 0 var(--padding-x);
-  display: flex;
-  align-items: center;
-  max-width: var(--max-width);
-  width: 100%;
-  margin: auto;
-}
-
 /** header **/
 header {
+  scroll-snap-align: start;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2em var(--padding-x);
@@ -98,6 +95,15 @@ input#hamburg {
   margin-top: 1em;
 }
 
+/** main **/
+.container {
+  min-height: 80vh;
+}
+
+#projects {
+  scroll-snap-align: center;
+}
+
 /** footer **/
 footer {
   height: 7em;
@@ -105,9 +111,16 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  scroll-snap-align: end;
 }
 
-footer span {
+footer > span {
+  padding: 0 var(--padding-x);
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -127,6 +140,10 @@ footer div a img {
 }
 
 @media (min-width: 700px) {
+  #brand {
+    margin-top: 0;
+  }
+
   label.hamburg {
     display: none;
   }

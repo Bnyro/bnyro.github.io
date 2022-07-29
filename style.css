@@ -96,8 +96,30 @@ input#hamburg {
 }
 
 /** main **/
+main {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   min-height: 80vh;
+  padding: 0 var(--padding-x);
+  display: flex;
+  align-items: center;
+}
+
+#about {
+  justify-content: space-around;
+}
+
+#about div h1 {
+  line-height: 0.8;
+}
+
+#about img {
+  height: 7em;
 }
 
 #projects {

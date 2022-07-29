@@ -128,7 +128,7 @@ main {
 #projects span {
   scroll-snap-align: center;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
 }
 
 #projects span div {
@@ -199,5 +199,9 @@ footer div a img {
 
   .topmenu li {
     margin-left: 2.5em;
+  }
+
+  #projects span {
+    grid-template-columns: auto auto;
   }
 }

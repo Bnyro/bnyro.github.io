@@ -104,13 +104,16 @@ main {
 }
 
 .container {
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 0 var(--padding-x);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #about {
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -122,8 +125,27 @@ main {
   height: 7em;
 }
 
-#projects {
+#projects span {
   scroll-snap-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#projects span div {
+  padding: 1em 2em;
+}
+
+#projects span div h3,
+#projects span div p {
+  color: var(--accent);
+}
+
+#projects span div a {
+  color: var(--text);
+}
+
+#projects span div a h2 {
+  line-height: 1;
 }
 
 /** footer **/

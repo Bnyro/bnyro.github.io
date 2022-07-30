@@ -8,8 +8,8 @@
   --accent: #908caa;
 
   /** sizes **/
-  --max-width: 72em;
-  --padding-x: 2em;
+  --max-width: 72rem;
+  --padding-x: 2rem;
 }
 
 html {
@@ -34,7 +34,7 @@ a {
 header {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2em var(--padding-x);
+  padding: 2rem var(--padding-x);
   display: flex;
   justify-content: space-between;
 }
@@ -59,19 +59,19 @@ label.hamburg {
 
 label.hamburg .line {
   background-color: var(--text);
-  height: 0.2em;
-  width: 2em;
-  margin: 0.16em 0;
+  height: 0.2rem;
+  width: 2rem;
+  margin: 0.16rem 0;
   margin-left: auto;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 label.hamburg .line + .line {
-  width: 1.5em;
+  width: 1.5rem;
 }
 
 label.hamburg .line + .line + .line {
-  width: 1em;
+  width: 1rem;
 }
 
 input#hamburg {
@@ -80,7 +80,7 @@ input#hamburg {
 
 .topmenu {
   height: auto;
-  max-height: 600px;
+  max-height: 37.5rem;
   overflow: hidden;
   transition: ease-in-out 0.2s;
   list-style-type: none;
@@ -90,12 +90,12 @@ input#hamburg {
 }
 
 .topmenu li {
-  margin-left: 2.5em;
+  margin-left: 2.5rem;
 }
 
 #hamburg:checked + .hamburg + .topmenu {
-  max-height: 600px;
-  margin-top: 1em;
+  max-height: 37.5rem;
+  margin-top: 1rem;
 }
 
 /** main **/
@@ -125,7 +125,7 @@ main {
 }
 
 #about img {
-  height: 7em;
+  height: 7rem;
 }
 
 #skills p {
@@ -142,12 +142,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em 2em 0.5em 2em;
+  margin: 2rem 2rem 0.5rem 2rem;
 }
 
 #skills span div:hover {
   cursor: pointer;
-  scale: 1.25;
+  scale: 1.1;
 }
 
 #skills span div img {
@@ -165,10 +165,10 @@ main {
 }
 
 #projects span div {
-  padding: 0 2em;
-  margin: 0.8em;
+  padding: 0 2rem;
+  margin: 0.8rem;
   background-color: var(--surface);
-  border-radius: 2em;
+  border-radius: 2rem;
 }
 
 #projects span div h3 {
@@ -189,7 +189,7 @@ main {
 
 /** footer **/
 footer {
-  height: 7em;
+  height: 7rem;
   background-color: var(--surface);
   display: flex;
   justify-content: space-between;
@@ -212,18 +212,18 @@ footer div {
 }
 
 footer div a {
-  margin: 0 1em;
+  margin: 0 1rem;
 }
 
 footer div a img {
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.5rem;
+  width: 1.5rem;
   filter: invert();
 }
 
 @media (max-width: 700px) {
   #brand {
-    margin-top: 0.3em;
+    margin-top: 0.3rem;
   }
 
   label.hamburg {

@@ -164,26 +164,27 @@ main {
   grid-template-columns: repeat(2, auto);
 }
 
-#projects span div {
+#projects span a {
   padding: 0 2rem;
   margin: 0.8rem;
   background-color: var(--surface);
   border-radius: 2rem;
 }
 
-#projects span div h3 {
+#projects span a:hover {
+  background-color: var(--highlight-high);
+}
+
+#projects span a h3 {
   color: var(--accent);
 }
 
-#projects span div p {
+#projects span a p {
   color: var(--accent);
 }
 
-#projects span div a {
+#projects span a h2 {
   color: var(--text);
-}
-
-#projects span div a h2 {
   line-height: 0.5;
 }
 

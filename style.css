@@ -32,7 +32,6 @@ a {
 
 /** header **/
 header {
-  scroll-snap-align: start;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 2em var(--padding-x);
@@ -41,7 +40,6 @@ header {
 }
 
 #brand {
-  margin-top: 0.3em;
   font-weight: 700;
   color: var(--text);
 }
@@ -53,7 +51,7 @@ nav {
 }
 
 label.hamburg {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
@@ -82,12 +80,17 @@ input#hamburg {
 
 .topmenu {
   height: auto;
-  max-height: 0;
+  max-height: 600px;
   overflow: hidden;
   transition: ease-in-out 0.2s;
   list-style-type: none;
   margin: 0;
   text-align: end;
+  display: flex;
+}
+
+.topmenu li {
+  margin-left: 2.5em;
 }
 
 #hamburg:checked + .hamburg + .topmenu {
@@ -104,8 +107,8 @@ main {
 }
 
 .container {
-  min-height: 100vh;
-  padding: 0 var(--padding-x);
+  min-height: 90vh;
+  padding: 5vh var(--padding-x);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,10 +128,40 @@ main {
   height: 7em;
 }
 
-#projects span {
-  scroll-snap-align: center;
+#skills p {
+  text-align: center;
+}
+
+#skills span {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(5, auto);
+}
+
+#skills span div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 2em 0.5em 2em;
+}
+
+#skills span div:hover {
+  cursor: pointer;
+  scale: 1.25;
+}
+
+#skills span div img {
+  width: clamp(2em, 15vw, 6em);
+  filter: invert() brightness(0.6);
+}
+
+#skills span div p {
+  text-align: center;
+}
+
+#projects span {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
 
 #projects span div {
@@ -138,7 +171,10 @@ main {
   border-radius: 2em;
 }
 
-#projects span div h3,
+#projects span div h3 {
+  color: var(--accent);
+}
+
 #projects span div p {
   color: var(--accent);
 }
@@ -148,7 +184,7 @@ main {
 }
 
 #projects span div a h2 {
-  line-height: 1;
+  line-height: 0.5;
 }
 
 /** footer **/
@@ -158,7 +194,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  scroll-snap-align: end;
 }
 
 footer > span {
@@ -186,25 +221,29 @@ footer div a img {
   filter: invert();
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   #brand {
-    margin-top: 0;
+    margin-top: 0.3em;
   }
 
   label.hamburg {
-    display: none;
-  }
-
-  .topmenu {
-    max-height: 600px;
     display: flex;
   }
 
+  .topmenu {
+    max-height: 0;
+    flex-direction: column;
+  }
+
   .topmenu li {
-    margin-left: 2.5em;
+    margin: 0.2em 0;
+  }
+
+  #skills span {
+    grid-template-columns: repeat(3, auto);
   }
 
   #projects span {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 }

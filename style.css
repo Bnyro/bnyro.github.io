@@ -132,7 +132,10 @@ main {
 }
 
 #projects span div {
-  padding: 1em 2em;
+  padding: 0 2em;
+  margin: 0.8em;
+  background-color: var(--surface);
+  border-radius: 2em;
 }
 
 #projects span div h3,

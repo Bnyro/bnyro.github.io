@@ -152,7 +152,7 @@ main {
 
 #skills span div img {
   width: clamp(2em, 15vw, 6em);
-  filter: invert() brightness(0.6);
+  filter: invert() brightness(0.8);
 }
 
 #skills span div p {
@@ -185,7 +185,7 @@ main {
 
 #projects span a h2 {
   color: var(--text);
-  line-height: 0.5;
+  margin: -0.5rem 0;
 }
 
 /** footer **/

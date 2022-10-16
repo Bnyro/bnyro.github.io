@@ -133,8 +133,10 @@ main {
 }
 
 #skills span {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem;
 }
 
 #skills span div {
@@ -142,7 +144,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem 0.5rem 2rem;
+  margin: 1rem 2rem;
+  flex: 1;
 }
 
 #skills span div:hover {
@@ -237,10 +240,6 @@ footer div a img {
 
   .topmenu li {
     margin: 0.2em 0;
-  }
-
-  #skills span {
-    grid-template-columns: repeat(3, auto);
   }
 
   #projects span {

@@ -152,7 +152,6 @@ main {
 
 #skills span div img {
   width: clamp(2em, 15vw, 6em);
-  filter: invert() brightness(0.8);
 }
 
 #skills span div p {

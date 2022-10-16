@@ -151,6 +151,7 @@ main {
 #skills span div:hover {
   cursor: pointer;
   scale: 1.1;
+  filter: drop-shadow(0 0 1rem var(--accent));
 }
 
 #skills span div img {

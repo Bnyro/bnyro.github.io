@@ -1,3 +1,6 @@
 [submodule "svg"]
 	path = svg
 	url = git@github.com:Bnyro/SVGRandomizer.git
+[submodule "start"]
+	path = start
+	url = https://github.com/bnyro/startpage

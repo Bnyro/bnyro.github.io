@@ -4,3 +4,6 @@
 [submodule "start"]
 	path = start
 	url = https://github.com/bnyro/startpage
+[submodule "search"]
+	path = search
+	url = https://github.com/Bnyro/search.git

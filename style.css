@@ -172,26 +172,26 @@ main {
   grid-template-columns: repeat(2, auto);
 }
 
-#projects span a {
+#projects span>a {
   padding: 0 2rem;
   margin: 0.8rem;
   background-color: var(--surface);
   border-radius: 2rem;
 }
 
-#projects span a:hover {
+#projects span>a:hover {
   background-color: var(--highlight-high);
 }
 
-#projects span a h3 {
+#projects span>a h3 {
   color: var(--accent);
 }
 
-#projects span a p {
+#projects span>a p {
   color: var(--accent);
 }
 
-#projects span a h2 {
+#projects span>a h2 {
   color: var(--text);
   margin: -0.5rem 0;
 }

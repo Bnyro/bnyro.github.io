@@ -163,6 +163,10 @@ main {
   width: clamp(2em, 15vw, 5em);
 }
 
+#skills span .invert {
+  filter: invert(0.9);
+}
+
 #skills span div p {
   text-align: center;
 }

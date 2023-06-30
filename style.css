@@ -37,6 +37,7 @@ header {
   padding: 2rem var(--padding-x);
   display: flex;
   justify-content: space-between;
+  scroll-snap-align: center;
 }
 
 #brand {
@@ -113,6 +114,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: center;
 }
 
 #about {
@@ -178,6 +180,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  scroll-snap-align: center;
 }
 
 footer > span {
@@ -206,6 +209,10 @@ footer div a img {
 }
 
 @media (max-width: 700px) {
+  html {
+    scroll-snap-type: none;
+  }
+
   #brand {
     margin-top: 0.3rem;
   }

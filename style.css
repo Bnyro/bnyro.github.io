@@ -128,23 +128,23 @@ main {
   height: 7rem;
 }
 
-#skills h4 {
+.grid h4 {
   margin-left: 3.5vw;
   align-self: flex-start;
 }
 
-#skills p {
+.grid p {
   text-align: center;
 }
 
-#skills span {
+.grid span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 2rem;
 }
 
-#skills span div {
+.grid span div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,51 +153,22 @@ main {
   flex: 1;
 }
 
-#skills span div:hover {
+.grid span div:hover {
   cursor: pointer;
   scale: 1.1;
   filter: drop-shadow(0 0 1rem var(--accent));
 }
 
-#skills span div img {
+.grid span div img {
   width: clamp(2em, 15vw, 5em);
 }
 
-#skills span .invert {
+.grid span .invert {
   filter: invert(0.9);
 }
 
-#skills span div p {
+.grid span div p {
   text-align: center;
-}
-
-#projects span {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-}
-
-#projects span>a {
-  padding: 0 2rem;
-  margin: 0.8rem;
-  background-color: var(--surface);
-  border-radius: 2rem;
-}
-
-#projects span>a:hover {
-  background-color: var(--highlight-high);
-}
-
-#projects span>a h3 {
-  color: var(--accent);
-}
-
-#projects span>a p {
-  color: var(--accent);
-}
-
-#projects span>a h2 {
-  color: var(--text);
-  margin: -0.5rem 0;
 }
 
 /** footer **/
